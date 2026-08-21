@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operations & PR Team — ITSA</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="particle-canvas"></canvas>
+<div class="ambient-glow glow-a"></div>
+<div class="ambient-glow glow-b"></div>
+<div class="ambient-glow glow-c"></div>
+
+<header>
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">IT</span>
+      <span>ITSA</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#events">Events</a></li>
+      <li><a href="index.html#team" class="active">Team</a></li>
+    </ul>
+
+    <button class="btn-join desktop-only">JOIN</button>
+
+    <button class="burger" id="burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html#home">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#events">Events</a>
+    <a href="index.html#team">Team</a>
+    <button class="btn-join" style="margin-top:14px;">JOIN</button>
+  </nav>
+</header>
+
+<main>
+  <div class="member-page-head">
+    <a href="index.html#team" class="back-link"><i class="fa-solid fa-arrow-left"></i> BACK TO ALL TEAMS</a>
+    <div class="member-team-icon"><i class="fa-solid fa-bullhorn"></i></div>
+    <h1 style="font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 700;">OPERATIONS & PR TEAM</h1>
+    <p style="margin-top: 12px; color: var(--mist); font-size: 0.98rem;">13 core members</p>
+  </div>
+
+  <section class="member-section">
+    <p class="member-subhead">// HEAD</p>
+    <div class="member-grid">
+      <div class="member-card" tabindex="0">
+        <div class="avatar-circle"><img src="portraits/Aryan Dhamdhere Ops and PR Head.png" alt="Aryan Dhamdhere"></div>
+        <p class="member-role">HEAD</p>
+        <p class="member-name">Aryan Dhamdhere</p>
+      </div>
+    </div>
+    <p class="member-subhead">// CO-HEAD</p>
+    <div class="member-grid">
+      <div class="member-card" tabindex="0">
+        <div class="avatar-circle"><img src="portraits/Tejas Shinde Ops & PR Core Member.jpg" alt="Tejas Shinde"></div>
+        <p class="member-role">CO-HEAD</p>
+        <p class="member-name">Tejas Shinde</p>
+      </div>
+    </div>
+    <p class="member-subhead">// MEMBERS</p>
+    <div class="member-grid">
+      <div class="member-card" tabindex="0">
+        <div class="avatar-circle"><img src="portraits/Nachiket Bedekar.jpg" alt="Nachiket Bedekar"></div>
+        <p class="member-role">MEMBER</p>
+        <p class="member-name">Nachiket Bedekar</p>
+      </div>
+      <div class="member-card" tabindex="0">
+        <div class="avatar-circle"><i class="fa-solid fa-user"></i></div>
+        <p class="member-role">MEMBER</p>
+        <p class="member-name">Siddhi Jain</p>
+      </div>
+      <div class="member-card" tabindex="0">
+        <div class="avatar-circle"><img src="portraits/Om Muli.png" alt="Om Muli"></div>
+        <p class="member-role">MEMBER</p>
+        <p class="member-name">Om Muli</p>
+      </div>
+      <div class="member-card" tabindex="0">
+        <div class="avatar-circle"><i class="fa-solid fa-user"></i></div>
+        <p class="member-role">MEMBER</p>
+        <p class="member-name">Monisha Gowda</p>
+      </div>
+      <div class="member-card" tabindex="0">
+        <div class="avatar-circle"><i class="fa-solid fa-user"></i></div>
+        <p class="member-role">MEMBER</p>
+        <p class="member-name">Ayusha Kale</p>
+      </div>
+      <div class="member-card" tabindex="0">
+        <div class="avatar-circle"><i class="fa-solid fa-user"></i></div>
+        <p class="member-role">MEMBER</p>
+        <p class="member-name">Sham Patole</p>
+      </div>
+      <div class="member-card" tabindex="0">
+        <div class="avatar-circle"><i class="fa-solid fa-user"></i></div>
+        <p class="member-role">MEMBER</p>
+        <p class="member-name">Shardul Hawaldar</p>
+      </div>
+      <div class="member-card" tabindex="0">
+        <div class="avatar-circle"><img src="portraits/Sanika_Mohite_SY_A.png" alt="Sanika Mohite"></div>
+        <p class="member-role">MEMBER</p>
+        <p class="member-name">Sanika Mohite</p>
+      </div>
+      <div class="member-card" tabindex="0">
+        <div class="avatar-circle"><img src="portraits/Sayali Talekar_TE.jpg" alt="Sayali Talekar"></div>
+        <p class="member-role">MEMBER</p>
+        <p class="member-name">Sayali Talekar</p>
+      </div>
+      <div class="member-card" tabindex="0">
+        <div class="avatar-circle"><img src="portraits/Rutuja Burkule SY_.png" alt="Rutuja Burkule"></div>
+        <p class="member-role">MEMBER</p>
+        <p class="member-name">Rutuja Burkule</p>
+      </div>
+      <div class="member-card" tabindex="0">
+        <div class="avatar-circle"><img src="portraits/Darshika_Atram_TE.jpg" alt="Darshika Atram"></div>
+        <p class="member-role">MEMBER</p>
+        <p class="member-name">Darshika Atram</p>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<footer>
+  &copy; <span class="year"></span> Information Technology Students Association — PVG's College of Engineering &amp; Technology, Pune
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

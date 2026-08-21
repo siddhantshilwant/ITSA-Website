@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ITSA — Learn. Build. Lead.</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="particle-canvas"></canvas>
+<div class="ambient-glow glow-a"></div>
+<div class="ambient-glow glow-b"></div>
+<div class="ambient-glow glow-c"></div>
+
+<!-- NAVBAR -->
+<header>
+  <div class="nav-wrap">
+    <a href="#home" class="logo">
+      <span class="logo-mark">IT</span>
+      <span>ITSA</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#team">Team</a></li>
+    </ul>
+
+    <button class="btn-join desktop-only">JOIN</button>
+
+    <button class="burger" id="burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#events">Events</a>
+    <a href="#team">Team</a>
+    <button class="btn-join" style="margin-top:14px;">JOIN</button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="eyebrow"><span class="pulse-dot"></span>IT DEPARTMENT · EST. STUDENT COMMUNITY</div>
+  <h1>LEARN. BUILD. LEAD.<br><span class="grad">ITSA.</span></h1>
+  <p>PVG’s College of Engineering &amp; Technology, Pune — IT Department. Explore the future of technology.</p>
+  <button class="btn-cta">JOIN OUR COMMUNITY <i class="fa-solid fa-arrow-right"></i></button>
+</section>
+
+<!-- WHAT WE DO -->
+<section class="wwd" id="about">
+  <div class="section-head">
+    <p class="section-tag">// WHAT WE DO</p>
+    <h2>Where curiosity turns into capability</h2>
+  </div>
+
+  <div class="wwd-grid">
+    <div class="wwd-card">
+      <div class="wwd-icon"><i class="fa-solid fa-code-branch"></i></div>
+      <h3>Hackathons</h3>
+      <p>Intense, time-boxed builds where ideas become working prototypes overnight.</p>
+    </div>
+    <div class="wwd-card">
+      <div class="wwd-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+      <h3>Workshops</h3>
+      <p>Hands-on sessions covering tools and frameworks students actually use.</p>
+    </div>
+    <div class="wwd-card">
+      <div class="wwd-icon"><i class="fa-solid fa-comments"></i></div>
+      <h3>Tech Talks</h3>
+      <p>Conversations with engineers and alumni on where the industry is headed.</p>
+    </div>
+    <div class="wwd-card">
+      <div class="wwd-icon"><i class="fa-solid fa-diagram-project"></i></div>
+      <h3>Projects</h3>
+      <p>Long-term builds that turn a semester's learning into a portfolio piece.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section class="events" id="events">
+  <div class="section-head">
+    <p class="section-tag">// EVENTS</p>
+    <h2>What's coming up</h2>
+    <p class="lead">ITSA's calendar fills up as the semester rolls out — hackathons, workshops, tech talks, and more. Check back here, or join the community to get notified first.</p>
+  </div>
+
+  <div class="events-empty glass">
+    <div class="events-empty-icon"><i class="fa-solid fa-calendar-plus"></i></div>
+    <h3>No events scheduled right now</h3>
+    <p>New dates get posted here as soon as they're locked in. In the meantime, say hello and we'll keep you posted.</p>
+    <button class="btn-cta">JOIN OUR COMMUNITY <i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team-section" id="team">
+  <div class="section-head">
+    <p class="section-tag">// LEADERSHIP</p>
+    <h2>MEET OUR LEADERS</h2>
+  </div>
+
+  <div class="leaders-row">
+    <div class="leader-card" tabindex="0">
+      <div class="avatar-hex"><img src="portraits/Aryan Parihar GS.jpg" alt="Aryan Parihar"></div>
+      <p class="leader-role">GENERAL SECRETARY</p>
+      <p class="leader-name">Aryan Parihar</p>
+    </div>
+    <div class="leader-card" tabindex="0">
+      <div class="avatar-hex"><img src="portraits/Aryan Patil JGS.jpg" alt="Aryan Patil"></div>
+      <p class="leader-role">JOINT GENERAL SECRETARY</p>
+      <p class="leader-name">Aryan Patil</p>
+    </div>
+  </div>
+
+  <div class="section-head">
+    <p class="section-tag">// COMMITTEES</p>
+    <h2>MEET OUR TEAM</h2>
+    <p class="lead">Every committee is led by its own heads. Click a team to see the full core team — portraits, names, and roles.</p>
+  </div>
+
+  <div class="category-grid">
+
+    <a href="team-web.html" class="category-card">
+      <div class="category-top">
+        <div class="category-icon"><i class="fa-solid fa-code"></i></div>
+        <i class="fa-solid fa-arrow-right category-arrow"></i>
+      </div>
+      <h3>Web Team</h3>
+      <div class="category-heads">
+        <div class="head-chip"><span class="dot"></span><span class="role-tag">HEAD</span> Harsh Baviskar</div>
+        <div class="head-chip"><span class="dot"></span><span class="role-tag">HEAD</span> Soham Kangale</div>
+      </div>
+      <p class="category-count">14 core members</p>
+    </a>
+
+    <a href="team-tech.html" class="category-card">
+      <div class="category-top">
+        <div class="category-icon"><i class="fa-solid fa-microchip"></i></div>
+        <i class="fa-solid fa-arrow-right category-arrow"></i>
+      </div>
+      <h3>Tech Team</h3>
+      <div class="category-heads">
+        <div class="head-chip"><span class="dot"></span><span class="role-tag">HEAD</span> Aradhana Hingane</div>
+      </div>
+      <p class="category-count">11 core members</p>
+    </a>
+
+    <a href="team-events.html" class="category-card">
+      <div class="category-top">
+        <div class="category-icon"><i class="fa-solid fa-calendar-days"></i></div>
+        <i class="fa-solid fa-arrow-right category-arrow"></i>
+      </div>
+      <h3>Event Management Team</h3>
+      <div class="category-heads">
+        <div class="head-chip"><span class="dot"></span><span class="role-tag">HEAD</span> Sanika Deokar</div>
+        <div class="head-chip"><span class="dot"></span><span class="role-tag">HEAD</span> Sakshi Rajmane</div>
+      </div>
+      <p class="category-count">19 core members</p>
+    </a>
+
+    <a href="team-social.html" class="category-card">
+      <div class="category-top">
+        <div class="category-icon"><i class="fa-solid fa-hashtag"></i></div>
+        <i class="fa-solid fa-arrow-right category-arrow"></i>
+      </div>
+      <h3>Social Media Team</h3>
+      <div class="category-heads">
+        <div class="head-chip"><span class="dot"></span><span class="role-tag">HEAD</span> Prem Jagtap</div>
+      </div>
+      <p class="category-count">10 core members</p>
+    </a>
+
+    <a href="team-ops.html" class="category-card">
+      <div class="category-top">
+        <div class="category-icon"><i class="fa-solid fa-bullhorn"></i></div>
+        <i class="fa-solid fa-arrow-right category-arrow"></i>
+      </div>
+      <h3>Operations &amp; PR Team</h3>
+      <div class="category-heads">
+        <div class="head-chip"><span class="dot"></span><span class="role-tag">HEAD</span> Aryan Dhamdhere</div>
+      </div>
+      <p class="category-count">13 core members</p>
+    </a>
+
+    <a href="team-design.html" class="category-card">
+      <div class="category-top">
+        <div class="category-icon"><i class="fa-solid fa-palette"></i></div>
+        <i class="fa-solid fa-arrow-right category-arrow"></i>
+      </div>
+      <h3>Design &amp; Production Team</h3>
+      <div class="category-heads">
+        <div class="head-chip"><span class="dot"></span><span class="role-tag">HEAD</span> Rudraksha Shete</div>
+      </div>
+      <p class="category-count">8 core members</p>
+    </a>
+
+    <a href="team-finance.html" class="category-card">
+      <div class="category-top">
+        <div class="category-icon"><i class="fa-solid fa-coins"></i></div>
+        <i class="fa-solid fa-arrow-right category-arrow"></i>
+      </div>
+      <h3>Finance Team</h3>
+      <div class="category-heads">
+        <div class="head-chip"><span class="dot"></span><span class="role-tag">HEAD</span> Harsh Navare</div>
+        <div class="head-chip"><span class="dot"></span><span class="role-tag">HEAD</span> Raj Borade</div>
+      </div>
+      <p class="category-count">7 core members</p>
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  &copy; <span class="year"></span> Information Technology Students Association — PVG's College of Engineering &amp; Technology, Pune
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
