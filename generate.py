@@ -2,9 +2,6 @@ import os
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 
-# Fill in a path (relative to the itsa-site folder) for anyone whose portrait
-# you've added to the portraits/ folder. Leave a name out and their card will
-# just keep the icon placeholder.
 PHOTOS = {
     # Web Team
     "Harsh Baviskar": "portraits/Harsh Baviskar_Web Team.jpg",
